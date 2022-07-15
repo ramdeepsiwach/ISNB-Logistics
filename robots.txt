@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 Disallow: /cgi-bin/
-Sitemap: https://ramdeepsiwach.github.io/ISNB-Logistics/sitemap.xml
+Sitemap: https://isnblogistics.com.au/sitemap.xml
