@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ISNB Logistics - Contact Us</title>
+    <meta name="description" content="ISNB Logistics is transportation and Logistics Company">
+    <meta name="author" content="pulkit0795">
+    <meta name="keywords" content="transportation, logistics, ISNB transportation, ISNB logistics, refrigerated, courier, courier service, cargo, business">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- bootstrap grid -->
+    <link rel="stylesheet" href="css/animate.css" />
+    <!-- animations -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- template styles -->
+    <link rel="stylesheet" href="css/color-default.css" />
+    <!-- template main color -->
+    <link rel="stylesheet" href="css/retina.css" />
+    <!-- retina ready styles -->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- responsive styles -->
+
+    <!-- Google Web fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,800,700,600' rel='stylesheet' type='text/css'>
+
+    <link rel="icon" href="img/isnb.png" type="image/png" />
+    
+    <!-- Font icons -->
+    <link rel="stylesheet" href="icon-fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
+    <!-- Fontawesome icons css -->
+
+    <link rel="stylesheet" href="style-switcher/styleSwitcher.css" />
+    <!-- styleswitcher -->
+    <script>
+    function SubForm (){
+        var mail = $('#newsletter').serializeArray();
+        mail = mail[0].value;
+        var email_pat = /^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i;
+        if (!email_pat.test(mail)) {
+            alert('Enter a valid E-Mail address!');
+        }
+        else{
+            $.ajax({
+                url:'https://api.apispreadsheets.com/data/16346/',
+                type:'post',
+                data:$("#newsletter").serializeArray(),
+                success: function(){
+                  alert("Successfully Subscribed :)");
+                  $("#newsletter").each(function(){
+                        this.reset();
+                    });
+                },
+                error: function(){
+                  alert("Sorry, there was an error :(")
+                }
+            });
+        }
+    }
+
+    </script>
+</head>
+
+<body>
+    <div class="header-wrapper header-transparent">
+        <!-- .header.header-style01 start -->
+        <header id="header" class="header-style01">
+            <!-- .container start -->
+            <div class="container">
+                <!-- .main-nav start -->
+                <div class="main-nav">
+                    <!-- .row start -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <nav class="navbar navbar-default nav-left" role="navigation">
+
+                                <!-- .navbar-header start -->
+                                <div class="navbar-header">
+                                    <div class="logo">
+                                        <a href="index.html">
+                                                <img src="img/logo.png" alt="ISNB Logistics"/>
+                                            </a>
+                                    </div>
+                                    <!-- .logo end -->
+                                </div>
+                                <!-- .navbar-header start -->
+
+                                <!-- MAIN NAVIGATION -->
+                                <div class="collapse navbar-collapse">
+                                    <ul class="nav navbar-nav">
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li class="dropdown">
+                                            <a href="services.html" data-toggle="dropdown" class="dropdown-toggle">Services</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="overland-transportation.html">Transportation</a></li>
+                                                <li><a href="warehousing.html">Warehousing</a></li>
+                                                <li><a href="home-delivery.html">Home delivery</a></li>
+                                                <li><a href="storage.html">Storage</a></li>
+                                            </ul>
+                                            <!-- .dropdown-menu end -->
+                                        </li>
+                                        <li class="current-menu-item"><a href="contact.html">Contact Us</a></li>
+
+                                        <li><a>    </a></li>
+
+                                    </ul>
+                                    <!-- .nav.navbar-nav end -->
+
+                                    <!-- RESPONSIVE MENU -->
+                                    <div id="dl-menu" class="dl-menuwrapper">
+                                        <button class="dl-trigger">Open Menu</button>
+                                        <ul class="dl-menu">
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="about.html">About Us</a></li>
+                                            <li>
+                                                <a href="#">Services</a>
+                                                <ul class="dl-submenu">
+                                                    <li><a href="overland-transportation.html">Transportation</a></li>
+                                                    <li><a href="warehousing.html">Warehousing</a></li>
+                                                    <li><a href="home-delivery.html">Home delivery</a></li>
+                                                    <li><a href="storage.html">Storage</a></li>
+                                                </ul>
+                                                <!-- dl-submenu end -->
+                                            </li>
+                                            <li><a href="contact.html">Contact Us</a></li>
+                                        </ul>
+                                        <!-- .dl-menu end -->
+                                    </div>
+                                    <!-- #dl-menu end -->
+                                </div>
+                                <!-- MAIN NAVIGATION END -->
+                            </nav>
+                            <!-- .navbar.navbar-default end -->
+                        </div>
+                        <!-- .col-md-12 end -->
+                    </div>
+                    <!-- .row end -->
+                </div>
+                <!-- .main-nav end -->
+            </div>
+            <!-- .container end -->
+        </header>
+        <!-- .header.header-style01 -->
+    </div>
+    <!-- .header-wrapper end -->
+
+
+    <!-- .page-title start -->
+    <div class="page-title-style01 page-title-negative-top pt-bkg08">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- <h1>Contact us</h1> -->
+
+                    <!-- <div class="breadcrumb-container">
+                        <ul class="breadcrumb clearfix">
+                            <li>You are here:</li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact simple</a>
+                            </li>
+                        </ul>
+                    </div> -->
+                    <!-- .breadcrumb-container end -->
+                </div>
+                <!-- .col-md-12 end -->
+            </div>
+            <!-- .row end -->
+        </div>
+        <!-- .container end -->
+    </div>
+    <!-- .page-title-style01.page-title-negative-top end -->
+
+    <div class="page-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="custom-heading">
+                        <h3>your inquiry</h3>
+                    </div>
+                    <!-- .custom-heading.left end -->
+
+                    <!-- <p>
+                        Cozy sphinx waves quart jug of bad milk. A very bad quack might jinx zippy fowls. Few quips galvanized the mock jury box. Quick brown dogs jump over the lazy fox. The jay, pig, fox, zebra, and my wolves quack! Blowzy red vixens fight for a quick jump.
+                        Joaquin Phoenix was gazed by MTV for luck. A wizard’s job is to vex chumps quickly in fog. Watch "Jeopardy!", Alex Trebek's fun TV quiz game. Woven silk pyjamas exchanged for blue quartz. Brawny gods just.
+                    </p> -->
+
+                    <br />
+
+                    <!-- .contact form start -->
+                    <form class="wpcf7 clearfix" id="form1">
+                        <fieldset>
+                            <label>
+                                    <span class="required">*</span> Your request:
+                                </label>
+                            <input type="text" class="wpcf7-text" id="contact-inquiry" required>
+                        </fieldset>
+
+                        <fieldset>
+                            <label>
+                                    <span class="required">*</span> Name:
+                                </label>
+                            <input type="text" class="wpcf7-text" id="contact-name" required>
+                        </fieldset>
+
+                        <fieldset>
+                            <label>
+                                    <span class="required">*</span> Email:
+                                </label>
+
+                            <input type="email" class="wpcf7-text" id="contact-email" required>
+                        </fieldset>
+
+                        <fieldset>
+                            <label>
+                                    <span class="required">*</span> Message:
+                                </label>
+                            <textarea rows="8" class="wpcf7-textarea" id="contact-message" required></textarea>
+                        </fieldset>
+                        <!-- <button class="wpcf7-submit">Submit</button> -->
+                        <input type="submit" class="wpcf7-submit" value="send" />
+                    </form>
+                    <!-- .wpcf7 end -->
+                    <!-- <div id="tp"></div> -->
+                </div>
+                <!-- .col-md-6 end -->
+
+                <div class="col-md-6">
+                    <div class="custom-heading">
+                        <h3>ISNB headquarters</h3>
+                    </div>
+                    <!-- .custom-heading end -->
+
+                    <!-- <div id="map"></div> --> <!--30.372575753292413, 75.54731416027869-->
+                    <iframe width=100% height=450px style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJz1mkov8T1moRIlCGs56ZzOw&key=AIzaSyAJ5Q9eIWg86DjOlWwDIwlbEzsOyyfqkZ4"></iframe>
+                    <!-- <iframe src="http://maps.google.com/maps?q=30.372575753292413,75.54731416027869&z=16&output=embed" height=450px width=100% margin-bottom= 20px></iframe> -->
+                    <!-- <p> </p>
+                    <br><br/>
+ -->
+                    <div class="custom-heading">
+                        <h4>company information</h4>
+                    </div>
+                    <!-- .custom-heading end -->
+
+                    <address>
+                        ISNB Logistics Pty Ltd, <br/>
+                        102 Bridge Rd, Keysborough, <br />
+                        VIC 3175, Australia
+                    </address>
+
+                    <a href="callto://+61413502272">
+                        <span class="text-big">
+                            041 350 2272
+                        </span>
+                    </a>
+                    <br />
+                    <a href="mailto:admin@isnblogistics.com.au">admin@isnblogistics.com.au</a>
+
+                </div>
+                <!-- .col-md-6 end -->
+
+            </div>
+            <!-- .row end -->
+            <div id="driver-apply"><p></p><br><p></p><p></p></div>
+            <div class="row" >
+                <div class="col-md-12">
+                    <div class="custom-heading">
+                        <h2>Work with Us</h2>
+                    </div>
+
+                    <form class="wpcf71 driver-app-form clearfix" id="driverForm">
+                        <fieldset>
+                            <label><span class="required">*</span> Full Name:</label>
+
+                            <input type="text" class="wpcf71-text" id="driver-name" required>
+                        </fieldset>
+
+                        <fieldset>
+                            <label><span class="required">*</span> Visa Status:</label>
+
+                            <input type="text" class="wpcf71-text" id="visa-status" required>
+                        </fieldset>
+
+                        <fieldset>
+                            <label><span class="required">*</span> Availability:</label>
+                            
+                            <input type="text" class="wpcf71-text" id="availability" required>
+                        </fieldset>
+
+                        <fieldset>
+                            <label><span class="required">*</span> License type:</label>
+
+                            <input class="wpcf71-text" id="driver-license-type" required>
+                        </fieldset>
+
+                        <!-- <fieldset>
+                            <label><span class="required">*</span> Past Experience:</label>
+
+                            <input class="wpcf71-text" id="past-xp" required>
+                        </fieldset> -->
+
+                        <fieldset>
+                            <label><span class="required">*</span> Phone number:</label>
+
+                            <input class="wpcf71-text" id="driver-phone" required>
+                        </fieldset>
+
+                        <fieldset>
+                            <label></label>
+
+                            <input type="submit" class="wpcf71-submit" value="apply now">
+                        </fieldset>
+                        <!-- <input onclick="SubmitDriverForm()" type="submit" class="wpcf71-submit" value="apply now"> -->
+
+                        <!-- <button onclick="SubmitDriverForm()" type="submit" class="wpcf71-submit">Apply Now</button> -->
+
+                        <!-- <input type="submit" class="wpcf71-submit" value="apply now"> -->
+                    </form>
+                    <!-- .wpcf7 end -->
+                </div>
+                <!-- .col-md-9 end -->
+            </div>
+            <!-- .row end -->
+        </div>
+        <!-- .container end -->
+    </div>
+    <!-- .page-content end -->
+
+    <div id="footer-wrapper" class="footer-dark">
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <ul class="col-md-3 col-sm-6 footer-widget-container clearfix">
+                        <!-- .widget.widget_text -->
+                        <li class="widget widget_newsletterwidget">
+                            <div class="title">
+                                <img src="img/logo-no-bg.png" alt="ISNB Logistics"/>
+                                <!-- <h3>newsletter subscribe</h3> -->
+                            </div>
+                            <p>
+                                ISNB Logistics is one of the fastest growing service providers in the refrigerated warehousing sector. Operating in Melbourne, ISNB provides refrigerated transportation on a pan-Australia network and refrigerated warehousing services that are capable of handling diverse array of temperature-sensitive products according to your temperature requirements.
+                            </p>
+                            <br />
+                            <!-- <form class="newsletter" id="newsletter">
+                                <input class="email" name="email" type="email" placeholder="Your email...">
+                                <button onclick="SubForm()" type="submit" class="submit"></button>
+                            </form> -->
+                        </li>
+                        <!-- .widget.widget_newsletterwidget end -->
+                    </ul>
+                    <!-- .col-md-3.footer-widget-container end -->
+
+                    <ul class="col-md-3 col-sm-6 footer-widget-container">
+                        <!-- .widget-pages start -->
+                        <li class="widget widget_pages">
+                            <div class="title">
+                                <h3>quick links</h3>
+                            </div>
+
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="contact.html#driver-apply">Work with Us</a></li>
+                            </ul>
+                        </li>
+                        <!-- .widget-pages end -->
+                    </ul>
+                    <!-- .col-md-3.footer-widget-container end -->
+
+                    <ul class="col-md-3 col-sm-6 footer-widget-container">
+                        <!-- .widget-pages start -->
+                        <li class="widget widget_pages">
+                            <div class="title">
+                                <h3>Services</h3>
+                            </div>
+
+                            <ul>
+                                <li><a href="storage.html">Storage</a></li>
+                                <li><a href="warehousing.html">Warehousing</a></li>
+                                <li><a href="overland-transportation.html">Transportation</a></li>
+                                <li><a href="home-delivery.html">Home delivery</a></li>
+
+                            </ul>
+                        </li>
+                        <!-- .widget-pages end -->
+                    </ul>
+                    <!-- .col-md-3.footer-widget-container end -->
+
+                    <ul class="col-md-3 col-sm-6 footer-widget-container">
+                        <li class="widget widget-text">
+                            <div class="title">
+                                <h3>contact us</h3>
+                            </div>
+
+                            <a href="https://www.google.com/maps/place/ISNB+LOGISTICS+PTY+LTD/@-37.9877725,145.1883516,17z/data=!3m1!4b1!4m5!3m4!1s0x6ad613ffa2a459cf:0xeccc999eb3865022!8m2!3d-37.9879229!4d145.1918141">
+                                <address>
+                                    ISNB Logistics Pty Ltd, <br/>
+                                    102 Bridge Rd, Keysborough, <br />
+                                    VIC 3175, Australia
+                                </address>
+                            </a>
+                            <a href="callto://+61413502272">
+                                <span class="text-big">
+                                    041 350 2272
+                                </span>
+                            </a>
+                            <br />
+                            <a href="mailto:admin@isnblogistics.com.au">admin@isnblogistics.com.au</a>
+                            <br />
+                            <!-- <ul class="footer-social-icons">
+                                <li><a href="#" class="fa fa-facebook"></a></li>
+                                <li><a href="#" class="fa fa-twitter"></a></li>
+                                <li><a href="#" class="fa fa-google-plus"></a></li>
+                                <li><a href="mailto:admin@isnblogistics.com.au" class="fa fa-envelope"></a></li>
+                            </ul> -->
+                            <!-- .footer-social-icons end -->
+                        </li>
+                        <!-- .widget.widget-text end -->
+                    </ul>
+                    <!-- .col-md-3.footer-widget-container end -->
+                </div>
+                <!-- .row end -->
+            </div>
+            <!-- .container end -->
+        </footer>
+        <!-- #footer end -->
+
+        <div class="copyright-container">
+            <p style="text-align: center">ISNB Logistics 2021. All RIGHTS RESERVED.</p>
+        </div>
+        <!-- .copyright-container end -->
+<!--         <a href="#" class="scroll-up" style="display: inline;">Scroll</a> -->
+        <!-- <a href="#" class="scroll-up">Scroll</a> -->
+    </div>
+    <!-- #footer-wrapper end -->
+
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=abc.&ampbb&callback=initMap">
+    </script>
+
+    <script>
+        function initMap() {
+        // The location of Uluru
+        const uluru = { lat: -25.344, lng: 131.036 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+    </script>
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <!-- jQuery library -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- .bootstrap script -->
+    <script src="js/jquery.srcipts.min.js"></script>
+    <!-- modernizr, retina, stellar for parallax -->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script> -->
+    <!-- google maps -->
+    <script src="js/jquery.ui.map.full.min.js"></script>
+    <!-- google maps -->
+    <script src="js/jquery.dlmenu.min.js"></script>
+    <!-- for responsive menu -->
+    <script src="style-switcher/styleSwitcher.js"></script>
+    <!-- styleswitcher script -->
+    <script src="js/include.js"></script>
+    <!-- custom js functions -->
+
+    
+
+    <script>
+        /* <![CDATA[ */
+        jQuery(document).ready(function($) {
+            'use strict';
+
+            // DRIVER APPLICATION FORM
+            $('.wpcf71 .wpcf71-submit').on('click', function(event) {
+                event.preventDefault();
+
+                var dvrName = $('#driver-name').val();
+                var visa = $('#visa-status').val();
+                var availability = $('#availability').val();
+                var license = $('#driver-license-type').val();
+                var phone = $('#driver-phone').val();
+
+                
+                // document.getElementById("tp").innerHTML = inquiry+"\n"+contact_message+"\n"+name+lastname;
+                // var email_pat = /^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i;
+                if(!/^[a-zA-Z][a-zA-Z\s]*$/i.test(dvrName)){
+                    alert("Enter a valid Name!");
+                }
+                else if (visa=="") {
+                    alert('Enter a valid Visa Status!');
+                }
+                else if (license=="") {
+                    alert('Enter a valid License type!');
+                }
+                else if (!/^(?:\+?(61))? ?(?:\((?=.*\)))?(0?[2-57-8])\)? ?(\d\d(?:[- ](?=\d{3})|(?!\d\d[- ]?\d[- ]))\d\d[- ]?\d[- ]?\d{3})$/.test(phone)) {
+                    alert('Enter a valid Phone number!');
+                }
+                else{
+                    $.ajax({
+                        // type: 'POST',
+                        // url: "contact.php",
+                        method:'POST',
+                        accepts: 'application/json',
+                        url:"https://formsubmit.co/ajax/7b0fb18ff669e791f5f38c695448b2d2",
+                        data: ({
+                            _subject: "New Driver Application from "+ dvrName,
+                            Name: dvrName,
+                            VisaStatus: visa,
+                            Availability: availability,
+                            LicenseType: license,
+                            PhoneNumber: phone
+                        })
+                    }).done(function(data) {
+                        const myArr = data.split("\"");
+                        if(myArr[3]=="true"){
+                            $("#driverForm").each(function(){
+                                this.reset();
+                            });
+                        }
+                        alert(myArr[7]);
+                    });
+                }
+                
+            }); // CONTACT FORM AJAX SUBMIT END
+
+            
+            // CONTACT FORM AJAX SUBMIT START --- request
+            $('.wpcf7 .wpcf7-submit').on('click', function(event) {
+                event.preventDefault();
+                var inquiry = $('#contact-inquiry').val();
+                var name = $('#contact-name').val();
+                var email = $('#contact-email').val();
+                var contact_message = $('#contact-message').val();
+                var form_data = new Array({
+                    'inquiry': inquiry,
+                    'name': name,
+                    'email': email,
+                    'message': contact_message
+                });
+                // document.getElementById("tp").innerHTML = inquiry+"\n"+contact_message+"\n"+name+lastname;
+                var email_pat = /^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i;
+        
+                if(inquiry==""){
+                    alert("Enter a valid Request!");
+                }
+                else if(!/^[a-zA-Z][a-zA-Z\s]*$/i.test(name)){
+                    alert("Enter a valid Name!");
+                }
+                else if (!email_pat.test(email)) {
+                    alert('Enter a valid E-Mail address!');
+                }
+                else if(contact_message==""){
+                    alert("Enter a valid message!");
+                }
+                else{
+                    $.ajax({
+                        // type: 'POST',
+                        // url: "contact.php",
+                        method:'POST',
+                        accepts: 'application/json',
+                        url:"https://formsubmit.co/ajax/7b0fb18ff669e791f5f38c695448b2d2",
+                        data: ({
+                            _subject: "New Enquiry from "+ name,
+                            _replyto: email,
+                            Inquiry: inquiry,
+                            Name: name,
+                            Email: email,
+                            Message: contact_message
+                        })
+                    }).done(function(data) {
+                        const myArr = data.split("\"");
+                        if(myArr[3]=="true"){
+                            $("#form1").each(function(){
+                                this.reset();
+                            });
+                        }
+                        alert(myArr[7]);
+                    });
+                }
+                
+            }); // CONTACT FORM AJAX SUBMIT END
+
+            
+        });
+        /* ]]> */
+    </script>
+</body>
+
+</html>
